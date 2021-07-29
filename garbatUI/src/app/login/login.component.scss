@@ -1,9 +1,14 @@
 .imagen-principal{
-    background-image: url(../../assets/foto-login2.jpeg);
+    background-image: url("https://blogs.iadb.org/transporte/wp-content/uploads/sites/9/2019/10/Capture-1.jpg");
     background-position: center;
     background-size:cover;
     margin-top: 3rem;
     margin-bottom: 3rem;
+}
+@media (min-width: 768px){
+.logo, h2{
+    margin-bottom: 3rem;
+    }
 }
 
 .container-fluid{
