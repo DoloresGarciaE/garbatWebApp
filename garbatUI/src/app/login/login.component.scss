@@ -1,14 +1,43 @@
-.imagen-principal{
-    background-image: url("https://blogs.iadb.org/transporte/wp-content/uploads/sites/9/2019/10/Capture-1.jpg");
-    background-position: center;
-    background-size:cover;
-}
-@media (min-width: 768px){
-.logo, h2{
-    margin-bottom: 3rem;
-    }
+
+
+//VERSION 2
+.google-btn{ background-color: #DF4B3B; }
+.facebook-btn{  background-color:#3C589C; }
+.login-container{
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
-.container-fluid{
-    width: 70%;
+.login-form-2{
+    padding: 5%;
+    background:#EDEDED;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-2 h3{
+    text-align: center;
+    color:black;
+}
+.login-container form{
+    padding: 10%;
+}
+.btnSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+}
+
+.login-form-2 .btnSubmit{
+    font-weight: 600;
+    color: #0062cc;
+    background-color: #fff;
+}
+
+
+.login-form-1{
+    background-image: url("https://p4.wallpaperbetter.com/wallpaper/716/789/241/road-cars-markings-palm-trees-wallpaper-preview.jpg");
+    background-position: center;
+    background-size:cover;
 }

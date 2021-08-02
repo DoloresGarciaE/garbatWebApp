@@ -1,53 +1,39 @@
 <html lang="en">
 
 <body>
-    <main class="form-size">
-        <div class="container-fluid">
-            <div class="row vh-100">
-                <div
-                    class="imagen-principal col-md-6 text-center py-5 d-flex flex-column justify-content-center auth-bg-section text-white">
-                    <h1 class="text-reset">Bienvenido a <br> Garbat Automotores</h1>
-                    <p class="font-weight-bold text-reset">Completa el formulario para ingresar.</p>
-                </div>
-                <div class="col-md-6 text-center d-flex flex-column py-5 justify-content-center">
-                    <div class="auth-form-section">
-                        <div class="logo"><img src="../../assets/logo-nuevo.png" class="img-fluid" alt="Unplug UI"
-                                width="200"></div>
-                        <h2>Sign in</h2>
-                        <form action="index.html" class="auth-form">
-                            <div class="form-group">
-                                <label for="username" class="sr-only">Nombre de usuario</label>
-                                <input type="text" name="username" id="username" class="form-control"
-                                    placeholder="Username">
-                            </div>
-                            <div class="form-group">
-                                <label for="userPassword" class="sr-only">Contraseña</label>
-                                <input type="password" name="userPassword" id="userPassword" class="form-control"
-                                    placeholder="Password">
-                            </div>
-                            <button type="submit" class="btn btn-success btn-block mb-3">Sign in</button>
-                            <div class="d-md-flex justify-content-between">
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" name="termsAgriment"
-                                        id="termsAgriment" value="termsAgreed">
-                                    <label class="form-check-label" for="termsAgriment">
-                                        Recordarme
-                                    </label>
-                                </div>
-                                <a href="#" class="text-info">Olvidaste tu contraseña?</a>
-                            </div>
-
-                        </form>
-                        <p class="mb-0 d-flex">
-                            <a href="#" class="btn btn-light btn-block mr-2">Ingresar con Google</a>
-                            <a href="#" class="btn btn-light btn-block mr-2">Ingresar con
-                                Facebook</a>
-                        </p>
+    <!--VERSION 2-->
+    <div class="container login-container">
+        <div class="row">
+            <div class="col-md-6 login-form-1">
+            </div>
+            <div class="col-md-6 login-form-2">
+                <h3>Bienvenidos!</h3>
+                <form class="form-signin">
+                    <div class="social-login">
+                        <button class="btn facebook-btn social-btn" type="button"><span><i
+                                    class="fab fa-facebook-f"></i> Sign in with
+                                Facebook</span> </button>
+                        <button class="btn google-btn social-btn" type="button"><span><i
+                                    class="fab fa-google-plus-g"></i> Sign in with
+                                Google+</span> </button>
                     </div>
-                </div>
+                    <p style="text-align:center"> OR </p>
+                    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required=""
+                        autofocus="">
+                    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+
+                    <button class="btn btn-success btn-block" type="submit"><i class="fas fa-sign-in-alt"></i> Sign
+                        in</button>
+                    <a href="#" id="forgot_pswd">Forgot password?</a>
+                    <hr>
+                    <!-- <p>Don't have an account!</p>  -->
+                    <button class="btn btn-primary btn-block" type="button" id="btn-signup"><i
+                            class="fas fa-user-plus"></i> Sign up New
+                        Account</button>
+                </form>
             </div>
         </div>
-    </main>
+    </div>
 
 </body>
 
