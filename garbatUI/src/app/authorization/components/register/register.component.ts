@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { UserI } from 'src/app/shared/interfaces/user-i';
 import { AuthorizationService } from '../../services/authorization.service';
 
 @Component({
@@ -27,8 +28,7 @@ export class RegisterComponent implements OnInit {
   }
 
   public onSubmit(): void {
-    console.log("this.formgrup", this.formGroup);
-    this.authSvc.register(this.formGroup.value).subscribe((registerData: any) => {
+    this.authSvc.register(this.formGroup.value).subscribe((registerData: UserI) => {
       console.log("OK", registerData);
     },
       (error: Error) => {
