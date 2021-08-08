@@ -1,7 +1,27 @@
-<form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
-  <input type="text" formControlName="name">
-  <input type="text" formControlName="surname">
-  <input type="email" formControlName="email">
-  <input type="password" formControlName="pwd">
-  <button type="submit">Register</button>
-</form>
+<!--VERSION 2-->
+<div class="container login-container">
+  <div class="row">
+    <div class="col-md-6 login-form-1">
+    </div>
+    <div class="col-md-6 login-form-2">
+      <h3>Bienvenidos!</h3>
+      <form class="form-signin" [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+
+        <input type="text" id="input-name" class="form-control" placeholder="Ingrese su nombre" required="">
+        <input type="text" id="input-surname" formControlName="surname" class="form-control" placeholder="Ingrese su apellido">
+        <input type="email" formControlName="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+        <input type="password" formControlName="pwd" id="inputPassword" class="form-control" placeholder="Password" required="">
+        <button class="btn btn-success btn-block" type="submit"><i class="fas fa-sign-in-alt"></i>Registrarse</button>
+        <hr>
+        <p style="text-align:center"> OR </p>
+        <div class="social-login">
+          <button class="btn facebook-btn social-btn" type="button"><span><i class="fab fa-facebook-f"></i> Sign in with
+              Facebook</span> </button>
+          <button class="btn google-btn social-btn" type="button"><span><i class="fab fa-google-plus-g"></i> Sign in
+              with
+              Google+</span> </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

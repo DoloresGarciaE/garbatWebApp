@@ -5,7 +5,7 @@
     </div>
     <div class="col-md-6 login-form-2">
       <h3>Bienvenidos!</h3>
-      <form class="form-signin">
+      <form class="form-signin" >
         <div class="social-login">
           <button class="btn facebook-btn social-btn" type="button"><span><i class="fab fa-facebook-f"></i> Sign in with
               Facebook</span> </button>
@@ -14,9 +14,9 @@
               Google+</span> </button>
         </div>
         <p style="text-align:center"> OR </p>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
-
+              <input type="email" formControlName="email" id="inputEmail" class="form-control" placeholder="Email address" required=""
+                autofocus="">
+              <input type="password" formControlName="pwd" id="inputPassword" class="form-control" placeholder="Password" required="">
         <button class="btn btn-success btn-block" type="submit"><i class="fas fa-sign-in-alt"></i> Sign
           in</button>
         <a href="#" id="forgot_pswd">Forgot password?</a>
