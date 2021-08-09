@@ -1,30 +1,48 @@
 <!--VERSION 2-->
 <div class="container login-container">
   <div class="row">
-    <div class="col-md-6 login-form-1">
-    </div>
+    <div class="col-md-6 login-form-1"></div>
     <div class="col-md-6 login-form-2">
       <h3>Bienvenidos!</h3>
-      <form class="form-signin" >
-        <div class="social-login">
-          <button class="btn facebook-btn social-btn" type="button"><span><i class="fab fa-facebook-f"></i> Sign in with
-              Facebook</span> </button>
-          <button class="btn google-btn social-btn" type="button"><span><i class="fab fa-google-plus-g"></i> Sign in
-              with
-              Google+</span> </button>
-        </div>
-        <p style="text-align:center"> OR </p>
-              <input type="email" formControlName="email" id="inputEmail" class="form-control" placeholder="Email address" required=""
-                autofocus="">
-              <input type="password" formControlName="pwd" id="inputPassword" class="form-control" placeholder="Password" required="">
-        <button class="btn btn-success btn-block" type="submit"><i class="fas fa-sign-in-alt"></i> Sign
-          in</button>
-        <a href="#" id="forgot_pswd">Forgot password?</a>
-        <hr>
+      <form class="form-signin">
+        <input
+          type="email"
+          formControlName="email"
+          id="inputEmail"
+          class="form-control"
+          placeholder="Direccion de email"
+          required=""
+          autofocus=""
+        />
+        <input
+          type="password"
+          formControlName="pwd"
+          id="inputPassword"
+          class="form-control"
+          placeholder="Constraseña"
+          required=""
+        />
+        <button class="btn btn-success btn-block" type="submit">
+          <i class="fas fa-sign-in-alt"></i> Ingresar
+        </button>
+        <a href="#" id="forgot_pswd">Olvidaste tu contraseña?</a>
+        <hr />
         <!-- <p>Don't have an account!</p>  -->
-        <button class="btn btn-primary btn-block" type="button" id="btn-signup"><i class="fas fa-user-plus"></i> Sign up
-          New
-          Account</button>
+        <button class="btn btn-primary btn-block" type="button" id="btn-signup">
+          <i class="fas fa-user-plus"></i> Crear cuenta
+        </button>
+        <hr />
+        <p style="text-align: center">OR</p>
+        <div class="social-login">
+          <button class="btn facebook-btn social-btn" type="button">
+            <span><i class="fab fa-facebook-f"></i> Ingrese con Facebook</span>
+          </button>
+          <button class="btn google-btn social-btn" type="button">
+            <span
+              ><i class="fab fa-google-plus-g"></i> Ingrese con Google+</span
+            >
+          </button>
+        </div>
       </form>
     </div>
   </div>
