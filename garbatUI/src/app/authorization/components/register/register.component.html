@@ -1,41 +1,14 @@
-<!--VERSION 2-->
 <div class="container login-container">
   <div class="row">
     <div class="col-md-6 login-form-1"></div>
     <div class="col-md-6 login-form-2">
       <h3>Bienvenidos!</h3>
       <form class="form-signin" [formGroup]="formGroup" (ngSubmit)="onSubmit()">
-        <input
-          type="text"
-          id="input-name"
-          class="form-control"
-          placeholder="Ingrese su nombre"
-          required=""
-        />
-        <input
-          type="text"
-          id="input-surname"
-          formControlName="surname"
-          class="form-control"
-          placeholder="Ingrese su apellido"
-        />
-        <input
-          type="email"
-          formControlName="email"
-          id="inputEmail"
-          class="form-control"
-          placeholder="Email address"
-          required=""
-          autofocus=""
-        />
-        <input
-          type="password"
-          formControlName="pwd"
-          id="inputPassword"
-          class="form-control"
-          placeholder="Password"
-          required=""
-        />
+        <input type="text" class="form-control" placeholder="Ingrese su nombre" required="" formControlName="name" />
+        <input type="text" formControlName="surname" class="form-control" placeholder="Ingrese su apellido" />
+        <input type="email" formControlName="email" class="form-control" placeholder="Email address" required=""
+          autofocus="" />
+        <input type="password" formControlName="pwd" class="form-control" placeholder="Password" required="" />
         <button class="btn btn-success btn-block" type="submit">
           <i class="fas fa-sign-in-alt"></i>Registrarse
         </button>

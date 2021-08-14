@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { UserI } from 'src/app/shared/interfaces/user-i';
 import { AuthorizationService } from '../../services/authorization.service';
 
@@ -12,7 +13,7 @@ export class RegisterComponent implements OnInit {
 
   public formGroup: FormGroup = new FormGroup({});
 
-  constructor(private formBuilder: FormBuilder, private authSvc: AuthorizationService) { }
+  constructor(private formBuilder: FormBuilder, private authSvc: AuthorizationService, private router: Router) { }
 
   ngOnInit(): void {
     this.initForm();
@@ -30,6 +31,7 @@ export class RegisterComponent implements OnInit {
   public onSubmit(): void {
     this.authSvc.register(this.formGroup.value).subscribe((registerData: UserI) => {
       console.log("OK", registerData);
+      this.router.navigateByUrl('/login');
     },
       (error: Error) => {
         console.log(error);
