@@ -1,0 +1,47 @@
+.google-btn {
+  background-color: #df4b3b;
+}
+
+.facebook-btn {
+  background-color: #3c589c;
+}
+.login-container {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.login-form-2 {
+  padding: 5%;
+  background: #ededed;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-2 h3 {
+  text-align: center;
+  color: black;
+}
+.login-container form {
+  padding: 10%;
+}
+.btnSubmit {
+  width: 50%;
+  border-radius: 1rem;
+  padding: 1.5%;
+  border: none;
+  cursor: pointer;
+}
+
+.login-form-2 .btnSubmit {
+  font-weight: 600;
+  color: #0062cc;
+  background-color: #fff;
+}
+
+.login-form-1 {
+  background-image: url("https://p4.wallpaperbetter.com/wallpaper/716/789/241/road-cars-markings-palm-trees-wallpaper-preview.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+input {
+  margin-bottom: 0.5rem;
+}

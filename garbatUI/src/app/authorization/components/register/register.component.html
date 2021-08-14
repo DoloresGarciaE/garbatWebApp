@@ -1,0 +1,18 @@
+<div class="container login-container">
+  <div class="row">
+    <div class="col-md-6 login-form-1"></div>
+    <div class="col-md-6 login-form-2">
+      <h3>Bienvenidos!</h3>
+      <form class="form-signin" [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+        <input type="text" class="form-control" placeholder="Ingrese su nombre" required="" formControlName="name" />
+        <input type="text" formControlName="surname" class="form-control" placeholder="Ingrese su apellido" />
+        <input type="email" formControlName="email" class="form-control" placeholder="Email address" required=""
+          autofocus="" />
+        <input type="password" formControlName="pwd" class="form-control" placeholder="Password" required="" />
+        <button class="btn btn-success btn-block" type="submit">
+          <i class="fas fa-sign-in-alt"></i>Registrarse
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
