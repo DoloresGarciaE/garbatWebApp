@@ -10,13 +10,15 @@ import { HttpClient } from '@angular/common/http';
 import { AppComponent } from '../app.component';
 import { AppModule } from '../app.module';
 import { FooterComponent } from '../shared/components/footer/footer.component';
+import { NavbarComponent } from '../shared/components/navbar/navbar.component';
 
 
 @NgModule({
   declarations: [
     LoginComponent,
     RegisterComponent,
-    FooterComponent
+    FooterComponent,
+    NavbarComponent
   ],
   imports: [
     CommonModule,
