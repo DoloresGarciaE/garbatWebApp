@@ -7,18 +7,21 @@ import { RegisterComponent } from './components/register/register.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AuthorizationService } from './services/authorization.service';
 import { HttpClient } from '@angular/common/http';
+import { AppComponent } from '../app.component';
+import { AppModule } from '../app.module';
+
 
 
 @NgModule({
   declarations: [
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
   ],
   imports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    AuthorizationRoutingModule
+    AuthorizationRoutingModule,
   ],
   providers: [
     AuthorizationService

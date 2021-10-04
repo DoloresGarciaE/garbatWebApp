@@ -5,17 +5,35 @@
     <div class="col-md-6 login-form-2">
       <h3>Bienvenidos!</h3>
       <form class="form-signin" [formGroup]="formGroup" (ngSubmit)="onSubmit()">
-        <input type="email" formControlName="email" id="inputEmail" class="form-control"
-          placeholder="Direccion de email" required="" autofocus="" />
-        <input type="password" formControlName="pwd" id="inputPassword" class="form-control" placeholder="Constraseña"
-          required="" />
+        <input
+          type="email"
+          formControlName="email"
+          id="inputEmail"
+          class="form-control"
+          placeholder="Direccion de email"
+          required=""
+          autofocus=""
+        />
+        <input
+          type="password"
+          formControlName="pwd"
+          id="inputPassword"
+          class="form-control"
+          placeholder="Constraseña"
+          required=""
+        />
         <button class="btn btn-success btn-block" type="submit">
           <i class="fas fa-sign-in-alt"></i> Ingresar
         </button>
         <a href="#" id="forgot_pswd">Olvidaste tu contraseña?</a>
         <hr />
         <!-- <p>Don't have an account!</p>  -->
-        <button class="btn btn-primary btn-block" type="button" id="btn-signup" [routerLink]="['/register']">
+        <button
+          class="btn btn-primary btn-block"
+          type="button"
+          id="btn-signup"
+          [routerLink]="['/register']"
+        >
           <i class="fas fa-user-plus"></i> Crear cuenta
         </button>
         <hr />
@@ -25,7 +43,9 @@
             <span><i class="fab fa-facebook-f"></i> Ingrese con Facebook</span>
           </button>
           <button class="btn google-btn social-btn" type="button">
-            <span><i class="fab fa-google-plus-g"></i> Ingrese con Google+</span>
+            <span
+              ><i class="fab fa-google-plus-g"></i> Ingrese con Google+</span
+            >
           </button>
         </div>
       </form>
